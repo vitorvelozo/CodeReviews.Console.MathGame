@@ -4,7 +4,7 @@ using Views.StartScreen;
 
 namespace Views.GameMenu;
 
-public class GameMenu
+public static class GameMenu
 {
     private static MenuChoices GetOperation()
     {

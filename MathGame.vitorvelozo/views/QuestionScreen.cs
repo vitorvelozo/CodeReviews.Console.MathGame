@@ -4,7 +4,7 @@ using Spectre.Console;
 
 namespace Views.QuestionDisplay;
 
-public class QuestionMenu
+public static class QuestionMenu
 {
     public static MathOperation GetOperation()
     {

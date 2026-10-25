@@ -2,7 +2,7 @@ using Models.MathQuestion;
 
 namespace Controllers.Evaluation;
 
-public class QuestionEvaluator()
+public static class QuestionEvaluator
 {
     private static int CalculateResult(int firstNumber, int secondNumber, MathOperation operation)
     {

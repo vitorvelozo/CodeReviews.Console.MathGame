@@ -3,7 +3,7 @@ using Spectre.Console;
 
 namespace Views.StartScreen;
 
-public class MainMenu
+public static class MainMenu
 {
     public static void DisplayWelcome()
     {

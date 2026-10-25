@@ -5,7 +5,7 @@ using Spectre.Console;
 
 namespace Views.StartScreen;
 
-public class ResultScreen
+public static class ResultScreen
 {
     public static void Display(MathSet mathSet)
     {
