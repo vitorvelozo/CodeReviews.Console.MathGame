@@ -1,45 +1,44 @@
 using Models.MathSet;
+using Spectre.Console;
 using Views.StartScreen;
 
 namespace Views.GameMenu;
 
 public class GameMenu
 {
-    private static void DisplayOptions()
+    private static MenuChoices GetOperation()
     {
-        Console.WriteLine("\nSelect an operation:");
-        Console.WriteLine("New game        = 0");
-        Console.WriteLine("Show history    = 1");
-        Console.WriteLine("End the program = 2");
-        Console.Write("=> ");
+        return AnsiConsole.Prompt(
+            new SelectionPrompt<MenuChoices>()
+            .Title("Select an operation")
+            .AddChoices(Enum.GetValues<MenuChoices>())
+        );
     }
 
     public static bool Display(MathSet mathSet)
     {
-        bool leaveMenu = false;
         bool keepPlaying = false;
-        string? operation;
-        string[] validOperations = {"0", "1", "2"};
-        do {
-            DisplayOptions();
-            operation = Console.ReadLine();
+        MenuChoices operation;
+        do
+        {    
+            operation = GetOperation();
             switch (operation)
             {
-                case "0":
-                    leaveMenu = true;
+                case MenuChoices.NewGame:
                     keepPlaying = true;
                     break;
-                case "1":
+                case MenuChoices.ShowHistory:
                     ResultScreen.Display(mathSet);
                     break;
-                case "2":
-                    leaveMenu = true;
-                    break;
-                default:
-                    Console.WriteLine($"Invalid input: {operation}. Valid options are {string.Join(", ", validOperations)}");
-                    break;
             }
-        } while (!leaveMenu);
+        } while (operation == MenuChoices.ShowHistory);
         return keepPlaying;
+    }
+
+    private enum MenuChoices
+    {
+        NewGame,
+        ShowHistory,
+        ExitProgram,
     }
 }
