@@ -1,7 +1,6 @@
-using Models.MathGame;
-using Models.MathQuestion;
+using CodeReviews.Console.MathGame.Models;
 
-namespace Controllers.QuestionGeneration;
+namespace CodeReviews.Console.MathGame.Controllers;
 
 public class QuestionGenerator
 {

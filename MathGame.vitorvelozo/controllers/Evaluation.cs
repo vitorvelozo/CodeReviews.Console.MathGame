@@ -1,6 +1,6 @@
-using Models.MathQuestion;
+using CodeReviews.Console.MathGame.Models;
 
-namespace Controllers.Evaluation;
+namespace CodeReviews.Console.MathGame.Controllers;
 
 public static class QuestionEvaluator
 {

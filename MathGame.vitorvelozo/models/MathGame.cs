@@ -1,6 +1,4 @@
-using Models.MathQuestion;
-
-namespace Models.MathGame;
+namespace CodeReviews.Console.MathGame.Models;
 
 public enum GameDifficulty : int
 {

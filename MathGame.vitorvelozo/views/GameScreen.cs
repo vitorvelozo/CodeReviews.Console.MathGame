@@ -1,8 +1,7 @@
-using Models.MathSet;
+using CodeReviews.Console.MathGame.Models;
 using Spectre.Console;
-using Views.StartScreen;
 
-namespace Views.GameMenu;
+namespace CodeReviews.Console.MathGame.Views;
 
 public static class GameMenu
 {

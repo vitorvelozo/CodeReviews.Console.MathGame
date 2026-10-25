@@ -1,11 +1,6 @@
-﻿using Controllers.Evaluation;
-using Controllers.QuestionGeneration;
-using Models.MathGame;
-using Models.MathQuestion;
-using Models.MathSet;
-using Views.GameMenu;
-using Views.QuestionDisplay;
-using Views.StartScreen;
+﻿using CodeReviews.Console.MathGame.Controllers;
+using CodeReviews.Console.MathGame.Models;
+using CodeReviews.Console.MathGame.Views;
 
 Game RunGame()
 {

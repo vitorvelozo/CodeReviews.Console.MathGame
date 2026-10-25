@@ -1,15 +1,13 @@
-using Models.MathGame;
-using Models.MathQuestion;
-using Models.MathSet;
+using CodeReviews.Console.MathGame.Models;
 using Spectre.Console;
 
-namespace Views.StartScreen;
+namespace CodeReviews.Console.MathGame.Views;
 
 public static class ResultScreen
 {
     public static void Display(MathSet mathSet)
     {
-       Console.Clear();
+       System.Console.Clear();
         for (int i = 0; i < mathSet.Games.Count; i++)
         {
             Game game = mathSet.Games[i];

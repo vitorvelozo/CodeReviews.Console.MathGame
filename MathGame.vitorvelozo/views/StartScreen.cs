@@ -1,7 +1,7 @@
-using Models.MathGame;
+using CodeReviews.Console.MathGame.Models;
 using Spectre.Console;
 
-namespace Views.StartScreen;
+namespace CodeReviews.Console.MathGame.Views;
 
 public static class MainMenu
 {
@@ -22,7 +22,7 @@ public static class MainMenu
     public static bool GetRandomMode()
     {
         bool randomMode = AnsiConsole.Confirm("Do you prefer to [red]manually select[/] operations?");
-        Console.Clear();
+        System.Console.Clear();
         return !randomMode;
     }
 }

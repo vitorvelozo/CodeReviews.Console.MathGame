@@ -1,4 +1,4 @@
-namespace Models.MathQuestion;
+namespace CodeReviews.Console.MathGame.Models;
 
 public enum MathOperation : ushort
 {

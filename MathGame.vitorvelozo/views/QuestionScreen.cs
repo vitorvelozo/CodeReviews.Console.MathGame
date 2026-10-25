@@ -1,8 +1,8 @@
 
-using Models.MathQuestion;
+using CodeReviews.Console.MathGame.Models;
 using Spectre.Console;
 
-namespace Views.QuestionDisplay;
+namespace CodeReviews.Console.MathGame.Views;
 
 public static class QuestionMenu
 {
@@ -18,7 +18,7 @@ public static class QuestionMenu
     public static string? GetQuestionAnswer(Question question)
     {
         AnsiConsole.Markup($"{question.FirstNumber} {GetOperationSymbol(question.Operation)} {question.SecondNumber} = ");
-        return Console.ReadLine();
+        return System.Console.ReadLine();
     }
 
     private static char GetOperationSymbol(MathOperation operation) =>

@@ -1,6 +1,4 @@
-using Models.MathGame;
-
-namespace Models.MathSet;
+namespace CodeReviews.Console.MathGame.Models;
 
 public class MathSet
 {
